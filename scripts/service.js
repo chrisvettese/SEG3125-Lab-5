@@ -93,11 +93,11 @@ $(document).ready(function () {
 });
 
 //Ensures body division has enough space so it isn't hidden behind navbar
-$(function ($) {
-    $(document).ready(function() {
+(function($) {
+    $(function(){
         $('body').css("padding-top", $(".navbar").height() + 20);
     });
-});
+} (jQuery));
 
 //Jumping to a specific section is difficult with a fixed navbar, this function corrects the scroll value
 $(window).bind('hashchange', () => {
