@@ -17,20 +17,18 @@ function validatePhone(txtPhone) {
     }
 }
 
+const unavailableDio = [1, 2, 4];
+const unavailableJosuke = [4, 5];
+const unavailableLevi = [3];
+let unavailableDays = [];
 
-// Using date restrictions on datepicker
-// Document of datepicker is here: https://api.jqueryui.com/datepicker/ 
-// The following code shows how to set specific dates to exclude, as well as Sundays (Day 0)
-// Make sure in your version that you associate Days to remove with Experts (e.g. John doesn't work Mondays)
-var unavailableDates = ["06/29/2020", "07/07/2020", "07/10/2020"]
 const setDateFormat = "mm/dd/yy";
 
 function disableDates(date) {
-    // Sunday is Day 0, disable all Sundays
-    if (date.getDay() == 0)
+    if (date.getDay() === 0 || date.getDay() === 6 || unavailableDays.includes(date.getDay()))
         return [false];
-    var string = jQuery.datepicker.formatDate(setDateFormat, date);
-    return [unavailableDates.indexOf(string) == -1]
+    const string = jQuery.datepicker.formatDate(setDateFormat, date);
+    return [true];
 }
 
 
@@ -73,31 +71,44 @@ $(document).ready(function () {
 
     // Look at the different events on which an action can be performed
     // https://www.w3schools.com/jquery/jquery_events.asp
-    // Here, we put 
-    $("#debit").on("mouseenter", function () {
-        $("#debit").addClass("showInput");
+    // Here, we put
+    const pay = $('#debit');
+    pay.on('mouseenter', function () {
+        $('#debit').addClass('showInput');
     });
 
-    $("#debit").on("mouseleave", function () {
-        $("#debit").removeClass("showInput");
+    pay.on('mouseleave', function () {
+        $('#debit').removeClass('showInput');
     });
 
     // https://jqueryui.com/tooltip/ 
     // The class "highlight" used here is predefined in JQuery UI
     // the message of the tooltip is encoded in the input (in the HTML file)
-    $("#debit").tooltip({
+    pay.tooltip({
         classes: {
             "ui-tooltip": "highlight"
         }
     });
 
-    $('body').css("padding-top", $(".navbar").height() + 20);
+    $('body').css('padding-top', $(".navbar").height() + 15);
+
+    $('#select-expert > input[type=radio]').change((e) => {
+        if ($("input[id=dio]:checked").val() === 'on') {
+            unavailableDays = unavailableDio;
+        } else if ($("input[id=josuke]:checked").val() === 'on') {
+            unavailableDays = unavailableJosuke;
+        } else if ($("input[id=levi]:checked").val() === 'on') {
+            unavailableDays = unavailableLevi;
+        }
+
+        $('#dateInput').prop('disabled', false);
+    });
 });
 
 //Jumping to a specific section is difficult with a fixed navbar, this function corrects the scroll value
 $(window).bind('hashchange', () => {
     const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrollDiff = $(".navbar").height() + 20;
+    const scrollDiff = $('.navbar').height() + 15;
     if (window.scrollY > windowHeight - scrollDiff) {
         const scrollAmount = window.scrollY - windowHeight;
         scrollBy(0, scrollAmount);

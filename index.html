@@ -27,6 +27,12 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
+    <script>
+        $(function () {
+            $("input").checkboxradio();
+        });
+    </script>
+
     <!-- Your own additional style sheet -->
     <link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -110,6 +116,7 @@
                 <td>
                     <div class="text-center">
                         <h5>Dio Brando</h5>
+                        <p class="available-days">Available Wednesdays and Fridays.</p>
                         <p>
                             Dio has 10 years of experience repairing bikes. With a focus on road roller bikes,
                             customers know him for his lightning fast repairs.
@@ -125,8 +132,10 @@
                 <td>
                     <div class="text-center">
                         <h5>Josuke Higashikata</h5>
+                        <p class="available-days">Available Mondays, Tuesdays, and Wednesdays.</p>
                         <p>
-                            Josuke is our newest member of the team, and brings his expertise with repairing mountain bikes.
+                            Josuke is our newest member of the team, and brings his expertise with repairing mountain
+                            bikes.
                             His unique abilities allow us to offer unbeatable prices on repairs.
                         </p>
                     </div>
@@ -139,8 +148,10 @@
                 <td>
                     <div class="text-center">
                         <h5>Levi Ackerman</h5>
+                        <p class="available-days">Available Mondays, Tuesdays, Thursdays, and Fridays.</p>
                         <p>
-                            Levi has been working with omnidirectional bikes for 20 years, and can handle everything from
+                            Levi has been working with omnidirectional bikes for 20 years, and helps with everything
+                            from
                             basic repairs to full tune ups.
                         </p>
                     </div>
@@ -152,7 +163,17 @@
 
     <div class="container" id="book">
         <h3>Book An Appointment</h3>
-        <p>Date: <label for="dateInput"></label><input type="text" id="dateInput"></p>
+        Select a specialist:
+        <fieldset id="select-expert">
+            <legend></legend>
+            <label for="dio">Dio</label>
+            <input type="radio" name="radio-button" id="dio">
+            <label for="josuke">Josuke</label>
+            <input type="radio" name="radio-button" id="josuke">
+            <label for="levi">Levi</label>
+            <input type="radio" name="radio-button" id="levi">
+        </fieldset>
+        <p>Date: <label for="dateInput"></label><input type="text" id="dateInput" disabled></p>
         <p>Phone Number Example <label for="phone"></label><input value="(1234)" type="text" id="phone"></p>
         <p>Credit Card: <input type="text" id="debit"
                                title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>

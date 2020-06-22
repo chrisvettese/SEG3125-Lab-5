@@ -53,3 +53,7 @@ table.expert-table td {
     width: 100%;
     height: auto;
 }
+
+.available-days {
+    color: grey;
+}
