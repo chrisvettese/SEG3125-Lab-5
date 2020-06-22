@@ -1,4 +1,3 @@
-
 /* Style sheet
    color picker www.w3schools.com/colors/colors_picker.asp
 */
@@ -6,34 +5,48 @@
 /* Bootstrap default font-family is Helvetica Neue */
 
 .error {
-  background-color: yellow;
-  color : red;
+    background-color: yellow;
+    color: red;
 }
 
 
 .showInput {
-  background-color: pink;
+    background-color: pink;
 }
 
 .navbar-custom {
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    color: #D00505;
+    background-color: #D00505;
 }
 
 .nav-image {
-  min-width: 50%;
-  height: auto;
+    min-width: 50%;
+    height: auto;
 }
 
-.main {
-  margin-top: 150px;
+body {
+    padding-top: 120px;
 }
 
 footer {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 nav a {
-  font-size: 1.4em;
+    font-size: 1.4em;
+}
+
+table td {
+    width: 20em;
+    height: 13em;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.bike-image {
+    width: 100%;
+    height: auto;
 }

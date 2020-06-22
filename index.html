@@ -41,7 +41,7 @@
 <!-- As your page is a vertical page (Module 4 requirement), you mus use the navbar -->
 <!-- to just jump to parts of the page. What I put as First/Second/Third here would -->
 <!-- be sections in your page. -->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-custom">
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom">
     <a class="navbar-brand" href="#"><img class="nav-image" src="images/logo.png" alt="logo" style="width:30px;">&nbsp;&nbsp;Chris's
         Bikes</a>
     <div class="container">
@@ -61,10 +61,9 @@
         </ul>
     </div>
 </nav>
-
 <div class="main">
     <div class="container" id="meet">
-        <h3><img src="images/peigne.png" alt="logo" style="width:40px;">First Item</h3>
+        <h3>Meet Our Experts</h3>
         <p>Display text 1 </p>
         <p>Display text 2 </p>
         <p>Display text 3 </p>
@@ -74,19 +73,43 @@
     </div>
 
     <div class="container" id="services">
-        <h3><img src="images/tiger.png" alt="logo" style="width:40px;">Second Item</h3>
-        <p>Display text 1 </p>
-        <p>Display text 2 </p>
-        <p>Display text 3 </p>
-        <p>Display text 4 </p>
-        <p>Display text 5 </p>
-        <p>Display text 6 </p>
+        <h3>Services and Prices</h3>
+        <table class="table table-responsive">
+            <tbody>
+            <tr>
+                <td>
+                    $24.99 General Tune Up
+                    <br>
+                    <img class="bike-image img-fluid" src="images/bike.jpg" alt="logo">
+                </td>
+                <td>
+                    $10.00 Bike Inspection
+                    <br>
+                    <img class="bike-image img-fluid" src="images/inspection.jpg" alt="logo">
+                </td>
+                <td>
+                    $15.50 Tire Replacement
+                    <br>
+                    <img class="bike-image img-fluid" src="images/tire.jpg" alt="logo">
+                </td>
+                <td>
+                    $49.99 Full Tune Up
+                    <br>
+                    <img class="bike-image img-fluid" src="images/tuneup.jpg" alt="logo">
+                </td>
+                <td>
+                    $17.99 Gear Repair
+                    <br>
+                    <img class="bike-image img-fluid" src="images/gear.jpg" alt="logo">
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
+    <br>
 
-    <!-- This section contains elements to be validated -->
-    <!-- Refer to the JavaScript file, where JQuery is used to listen to those inputs using the ids -->
     <div class="container" id="book">
-        <h3>Third Item</h3>
+        <h3>Book An Appointment</h3>
         <p>Date: <input type="text" id="dateInput"></p>
         <p>Phone Number Example <input value="(1234)" type="text" id="phone"></p>
         <p>Credit Card: <input type="text" id="debit"

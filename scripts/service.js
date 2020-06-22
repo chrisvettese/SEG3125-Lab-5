@@ -1,5 +1,3 @@
-
-
 // Function to verify that the phone number is correct.
 // Here, I validate for (12345), but you have to change that for a phone validation
 // Tutorials on Regular expressions
@@ -96,4 +94,17 @@ $(document).ready(function(){
       });
 
 
+});
+
+//Jumping to a specific section is difficult with a fixed navbar, this function corrects the section being hidden
+$(window).bind( 'hashchange', (e) => {
+    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (window.scrollY > windowHeight - 100) {
+        const scrollAmount = window.scrollY - windowHeight;
+        scrollBy(0, scrollAmount);
+    } else {
+        scrollBy(0, -100)
+    }
+    //Remove the hash from the url so that the same button in the navbar can be clicked again
+    history.pushState("", document.title, window.location.pathname + window.location.search);
 });
