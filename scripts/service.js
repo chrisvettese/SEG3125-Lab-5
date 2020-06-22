@@ -92,18 +92,20 @@ $(document).ready(function () {
     });
 });
 
+//Ensures body division has enough space so it isn't hidden behind navbar
 $(function () {
     $('body').css("padding-top", $(".navbar").height() + 20);
 });
 
-//Jumping to a specific section is difficult with a fixed navbar, this function corrects the section being hidden
+//Jumping to a specific section is difficult with a fixed navbar, this function corrects the scroll value
 $(window).bind('hashchange', () => {
     const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    if (window.scrollY > windowHeight - 100) {
+    const scrollDiff = $(".navbar").height() + 20;
+    if (window.scrollY > windowHeight - scrollDiff) {
         const scrollAmount = window.scrollY - windowHeight;
         scrollBy(0, scrollAmount);
     } else {
-        scrollBy(0, -105)
+        scrollBy(0, -scrollDiff)
     }
     //Remove the hash from the url so that the same button in the navbar can be clicked again
     history.pushState("", document.title, window.location.pathname + window.location.search);
