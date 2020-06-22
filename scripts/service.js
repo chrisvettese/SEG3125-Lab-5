@@ -90,14 +90,9 @@ $(document).ready(function () {
             "ui-tooltip": "highlight"
         }
     });
-});
 
-//Ensures body division has enough space so it isn't hidden behind navbar
-(function($) {
-    $(function(){
-        $('body').css("padding-top", $(".navbar").height() + 20);
-    });
-} (jQuery));
+    $('body').css("padding-top", $(".navbar").height() + 20);
+});
 
 //Jumping to a specific section is difficult with a fixed navbar, this function corrects the scroll value
 $(window).bind('hashchange', () => {
