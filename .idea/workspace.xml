@@ -2,38 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02889f54-a55f-4ee0-9e8d-b59e436b1b01" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/SEG3125-Lab-5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module1-Survey/images/Provigo-FrontPage.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module1-Survey/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module1-Survey/styles/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module2-Grocery/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module2-Grocery/scripts/groceries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module2-Grocery/scripts/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module2-Grocery/styles/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module4-Service/images/Erwind.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module4-Service/images/Jule.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module4-Service/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module4-Service/styles/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module5-ValidatedService/images/peigne.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/peigne.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module5-ValidatedService/images/tiger.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/tiger.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module5-ValidatedService/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module5-ValidatedService/scripts/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module5-ValidatedService/styles/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/jquery-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module5-ValidatedService/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module6-SurveyAnalysis/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module6-SurveyAnalysis/data/animal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module6-SurveyAnalysis/data/color.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module6-SurveyAnalysis/data/fruit.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module6-SurveyAnalysis/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module6-SurveyAnalysis/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module6-SurveyAnalysis/public/assets/action.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module6-SurveyAnalysis/surveyController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module6-SurveyAnalysis/views/niceSurvey.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEG3125-Module6-SurveyAnalysis/views/showResults.ejs" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/bike.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/dio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/gear.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/inspection.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/josuke.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tire.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tuneup.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/AUTHORS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-bg_diagonals-thick_75_f3d8d8_40x40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-bg_dots-small_65_a6a6a6_2x2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-bg_glass_55_fbf8ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-bg_highlight-hard_100_eeeeee_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-bg_highlight-hard_100_f6f6f6_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-bg_highlight-soft_15_cc0000_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-icons_004276_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-icons_cc0000_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/images/ui-icons_ffffff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/jquery-ui.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery-ui-1.12.1.custom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SEG3125-Lab-4/SEG3125-Lab-4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SEG3125-Lab-4/SEG3125-Lab-4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +50,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dc3BMTksfUvzaSTBV0C8VHKbCs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -58,7 +68,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SEG3125-Lab-4" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -83,70 +93,79 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592710417649</updated>
-      <workItem from="1592710431511" duration="2496000" />
+      <workItem from="1592710431511" duration="2874000" />
+      <workItem from="1592773478016" duration="4263000" />
+      <workItem from="1592780196239" duration="368000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592710696136">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592780572111">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1592710696136" />
-    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1592710690718">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1592780572111" />
+    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1592773763407">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592710690718" />
-    <state width="1493" height="271" key="GridCell.Tab.0.bottom" timestamp="1592772986068">
+    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592773763407" />
+    <state width="1493" height="271" key="GridCell.Tab.0.bottom" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592772986068" />
-    <state width="1493" height="271" key="GridCell.Tab.0.center" timestamp="1592772986068">
+    <state width="1493" height="271" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state width="1493" height="271" key="GridCell.Tab.0.center" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592772986068" />
-    <state width="1493" height="271" key="GridCell.Tab.0.left" timestamp="1592772986067">
+    <state width="1493" height="271" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state width="1493" height="271" key="GridCell.Tab.0.left" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592772986067" />
-    <state width="1493" height="271" key="GridCell.Tab.0.right" timestamp="1592772986068">
+    <state width="1493" height="271" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state width="1493" height="271" key="GridCell.Tab.0.right" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592772986068" />
-    <state width="1493" height="271" key="GridCell.Tab.1.bottom" timestamp="1592772986068">
+    <state width="1493" height="271" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state width="1493" height="271" key="GridCell.Tab.1.bottom" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592772986068" />
-    <state width="1493" height="271" key="GridCell.Tab.1.center" timestamp="1592772986068">
+    <state width="1493" height="271" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state width="1493" height="271" key="GridCell.Tab.1.center" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1592772986068" />
-    <state width="1493" height="271" key="GridCell.Tab.1.left" timestamp="1592772986068">
+    <state width="1493" height="271" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state width="1493" height="271" key="GridCell.Tab.1.left" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1592772986068" />
-    <state width="1493" height="271" key="GridCell.Tab.1.right" timestamp="1592772986068">
+    <state width="1493" height="271" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state width="1493" height="271" key="GridCell.Tab.1.right" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1592772986068" />
-    <state width="1493" height="271" key="GridCell.Tab.2.bottom" timestamp="1592772986068">
+    <state width="1493" height="271" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state width="1493" height="271" key="GridCell.Tab.2.bottom" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592772986068" />
-    <state width="1493" height="271" key="GridCell.Tab.2.center" timestamp="1592772986068">
+    <state width="1493" height="271" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state width="1493" height="271" key="GridCell.Tab.2.center" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1592772986068" />
-    <state width="1493" height="271" key="GridCell.Tab.2.left" timestamp="1592772986068">
+    <state width="1493" height="271" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state width="1493" height="271" key="GridCell.Tab.2.left" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1592772986068" />
-    <state width="1493" height="271" key="GridCell.Tab.2.right" timestamp="1592772986068">
+    <state width="1493" height="271" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state width="1493" height="271" key="GridCell.Tab.2.right" timestamp="1592780527920">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="271" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1592772986068" />
+    <state width="1493" height="271" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1592780527920" />
+    <state x="439" y="117" key="NewModule_or_Project.wizard" timestamp="1592773822131">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="439" y="117" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1592773822131" />
     <state x="741" y="205" width="914" height="707" key="SettingsEditor" timestamp="1592773063707">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

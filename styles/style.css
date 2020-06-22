@@ -25,4 +25,12 @@ h1 {
   background-color: pink;
 }
 
+.navbar-custom {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+}
 
+body {
+  margin-top: 75px;
+}
