@@ -184,7 +184,33 @@ $(document).ready(() => {
     });
 
     $('#book-button').on('click', () => {
-        alert("Request submitted! We'll call you when your appointment is scheduled.")
+        if (phoneNumberState && fullNameState && dateState && payState) {
+            alert("Request submitted! We'll call you when your appointment is scheduled.");
+        } else {
+            const missing = [];
+            if (!dateState) {
+                missing.push("date");
+            }
+            if (!phoneNumberState) {
+                missing.push("phone number");
+            }
+            if (!fullNameState) {
+                missing.push("full name");
+            }
+            if (!payState) {
+                missing.push("credit/debit card");
+            }
+            let missingStr = '';
+            for (let i = 0; i < missing.length; i++) {
+                missingStr += missing[i];
+                if (i < missing.length - 1) {
+                    missingStr += ', ';
+                } else {
+                    missingStr += '.';
+                }
+            }
+            alert("Error: You must fill out the following information to book an appointment - " + missingStr);
+        }
     })
 });
 
