@@ -76,27 +76,27 @@
                 <td>
                     $24.99 General Tune Up
                     <br>
-                    <img class="bike-image img-fluid" src="images/bike.jpg" alt="logo">
+                    <img class="bike-image img-fluid" src="images/bike.jpg" alt="Bike">
                 </td>
                 <td>
                     $10.00 Bike Inspection
                     <br>
-                    <img class="bike-image img-fluid" src="images/inspection.jpg" alt="logo">
+                    <img class="bike-image img-fluid" src="images/inspection.jpg" alt="Inspection">
                 </td>
                 <td>
                     $15.50 Tire Replacement
                     <br>
-                    <img class="bike-image img-fluid" src="images/tire.jpg" alt="logo">
+                    <img class="bike-image img-fluid" src="images/tire.jpg" alt="Tire">
                 </td>
                 <td>
                     $49.99 Full Tune Up
                     <br>
-                    <img class="bike-image img-fluid" src="images/tuneup.jpg" alt="logo">
+                    <img class="bike-image img-fluid" src="images/tuneup.jpg" alt="Tuneup">
                 </td>
                 <td>
                     $17.99 Gear Repair
                     <br>
-                    <img class="bike-image img-fluid" src="images/gear.jpg" alt="logo">
+                    <img class="bike-image img-fluid" src="images/gear.jpg" alt="Gear">
                 </td>
             </tr>
             </tbody>
@@ -109,7 +109,7 @@
             <tbody>
             <tr>
                 <td>
-                    <img class="bike-image img-fluid" src="images/dio.jpg" alt="logo">
+                    <img class="bike-image img-fluid" src="images/dio.jpg" alt="Dio">
 
                 </td>
                 <td>
@@ -125,8 +125,7 @@
             </tr>
             <tr>
                 <td>
-                    <img class="bike-image img-fluid" src="images/josuke.jpg" alt="logo">
-
+                    <img class="bike-image img-fluid" src="images/josuke.jpg" alt="Josuke">
                 </td>
                 <td>
                     <div class="text-center">
@@ -142,7 +141,7 @@
             </tr>
             <tr>
                 <td>
-                    <img class="bike-image img-fluid" src="images/levi.jpg" alt="logo">
+                    <img class="bike-image img-fluid" src="images/levi.jpg" alt="Levi">
                 </td>
                 <td>
                     <div class="text-center">
@@ -172,10 +171,22 @@
             <label for="levi">Levi</label>
             <input type="radio" name="radio-button" id="levi" class="radio-input">
         </fieldset>
-        <p>Date: <label for="dateInput"></label><input type="text" id="dateInput" disabled></p>
-        <p>Phone Number: <label for="phone"></label><input placeholder="xxx-xxx-xxxx" type="text" id="phone"></p>
-        <p>Credit Card: <input type="text" id="debit"
-                               title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
+        <p id="date-text">
+            Date: <label for="date-input"></label>
+            <input type="text" id="date-input" readonly='true' disabled>
+        </p>
+        <p id="phone-text">
+            Phone Number: <label for="phone"></label>
+            <input placeholder="xxx-xxx-xxxx" type="text" id="phone">
+        </p>
+        <p id="name-text">
+            Full Name: <label for="full-name"></label>
+            <input type="text" id="full-name">
+        </p>
+        <p>
+            Credit Card: <input type="text" id="debit"
+                                title="We ask for your credit card number in case of no-show, $5.00 will be charged.">
+        </p>
     </div>
 
     <div class="container" id="contact">
