@@ -15,8 +15,7 @@
 }
 
 .navbar-custom {
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
+    top: 0;
     width: 100%;
     color: #D00505;
     background-color: #D00505;

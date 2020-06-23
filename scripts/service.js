@@ -1,22 +1,3 @@
-// Function to verify that the phone number is correct.
-// Here, I validate for (12345), but you have to change that for a phone validation
-// Tutorials on Regular expressions
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions 
-// https://flaviocopes.com/javascript-regular-expressions/ 
-// Regular expressions can get complex, you can think in terms of a series of characters
-// or numbers 
-function validatePhone(txtPhone) {
-    var a = document.getElementById(txtPhone).value;
-    // This filter asks for something like (12345), so parentheses with any number (at least 1)
-    // of digits
-    var filter = /^(\([-+]?[0-9]+)\)$/;
-    if (filter.test(a)) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
 const unavailableDio = [1, 2, 4];
 const unavailableJosuke = [4, 5];
 const unavailableLevi = [3];
@@ -25,21 +6,16 @@ let unavailableDays = [];
 const setDateFormat = "mm/dd/yy";
 
 function disableDates(date) {
-    if (date.getDay() === 0 || date.getDay() === 6 || unavailableDays.includes(date.getDay()))
+    if (date.getDay() === 0 || date.getDay() === 6 || unavailableDays.includes(date.getDay())) {
         return [false];
-    const string = jQuery.datepicker.formatDate(setDateFormat, date);
+    }
     return [true];
 }
 
 
 // HERE, JQuery "LISTENING" starts
 $(document).ready(function () {
-
-    // phone validation, it calls validatePhone
-    // and also some feedback as an Alert + putting a value in the input that shows the format required
-    // the "addClass" will use the class "error" defined in style.css and add it to the phone input
-    // The "error" class in style.css defines yellow background and red foreground
-    $("#phone").on("change", function () {
+    /*$("#phone").on("change", function () {
         if (!validatePhone("phone")) {
             alert("Wrong format for phone");
             $("#phone").val("(xxxx)");
@@ -47,20 +23,12 @@ $(document).ready(function () {
         } else {
             $("#phone").removeClass("error");
         }
-    });
+    });*/
 
-    // To change the style of the calender, look in jqueryui.com, under Themes, in the ThemeRoller Gallery 
-    // You can try different themes (the names are under the calendars) / This is Excite Bike 
-    // To use a different theme you must include its css in your HTML file. 
-    // The one I included in my HTML is the Excite Bike, but you can try others
-
-    // Also, here is a good tutorial for playing with the datepicker in https://webkul.com/blog/jquery-datepicker/ 
-    // Datepicker is also documented as one of the widgets here: https://api.jqueryui.com/category/widgets/ 
     $("#dateInput").datepicker(
         {
             dateFormat: setDateFormat,
-            // no calendar before June 1rst 2020
-            minDate: new Date('06/01/2020'),
+            minDate: new Date(),
             maxDate: '+4M',
             // used to disable some dates
             beforeShowDay: $.datepicker.noWeekends,
@@ -74,11 +42,11 @@ $(document).ready(function () {
     // Here, we put
     const pay = $('#debit');
     pay.on('mouseenter', function () {
-        $('#debit').addClass('showInput');
+        pay.addClass('showInput');
     });
 
     pay.on('mouseleave', function () {
-        $('#debit').removeClass('showInput');
+        pay.removeClass('showInput');
     });
 
     // https://jqueryui.com/tooltip/ 
@@ -90,9 +58,16 @@ $(document).ready(function () {
         }
     });
 
-    $('body').css('padding-top', $(".navbar").height() + 15);
+    const dateInput = $('#dateInput')
+    dateInput.on('mouseenter', function () {
+        dateInput.addClass('showInput');
+    });
 
-    $('#select-expert > input[type=radio]').change((e) => {
+    dateInput.on('mouseleave', function () {
+        dateInput.removeClass('showInput');
+    });
+
+    $('#select-expert input[type=radio]').on('change', () => {
         if ($("input[id=dio]:checked").val() === 'on') {
             unavailableDays = unavailableDio;
         } else if ($("input[id=josuke]:checked").val() === 'on') {
@@ -100,8 +75,24 @@ $(document).ready(function () {
         } else if ($("input[id=levi]:checked").val() === 'on') {
             unavailableDays = unavailableLevi;
         }
+        dateInput.prop('disabled', false);
+    });
 
-        $('#dateInput').prop('disabled', false);
+    const phoneInput = $('#phone');
+    phoneInput.on('change paste keyup', (e) => {
+        const phoneNumber = $("input[id=phone]:text");
+        let phoneStr = phoneNumber.val();
+        phoneStr = phoneStr.replace(/\D/g,'');
+        if (phoneStr.length > 10) {
+            phoneStr = phoneStr.substring(0, 10);
+        }
+        if (phoneStr.length > 2) {
+            phoneStr = phoneStr.substring(0, 3) + '-' + phoneStr.substring(3);
+        }
+        if (phoneStr.length > 6) {
+            phoneStr = phoneStr.substring(0, 7) + '-' + phoneStr.substring(7);
+        }
+        phoneNumber.val(phoneStr);
     });
 });
 
