@@ -65,3 +65,15 @@ table.expert-table td {
 .btn-danger {
     background-color: #D00505;
 }
+
+.icon-image {
+    width: 1.5em;
+    height: auto;
+    padding-right: 10px;
+}
+
+.icon-image-small {
+    width: 2em;
+    height: auto;
+    padding-right: 5px;
+}
