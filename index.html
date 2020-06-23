@@ -27,9 +27,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
+    <script src="scripts/service.js"></script>
     <script>
         $(function () {
-            $("input").checkboxradio();
+            $('.radio-input').checkboxradio();
         });
     </script>
 
@@ -64,8 +65,6 @@
         </ul>
     </div>
 </nav>
-
-<script src="scripts/service.js"></script>
 
 <div class="main">
     <h1 class="text-center">Chris's Bike Shop</h1>
@@ -167,11 +166,11 @@
         <fieldset id="select-expert">
             <legend></legend>
             <label for="dio">Dio</label>
-            <input type="radio" name="radio-button" id="dio">
+            <input type="radio" name="radio-button" id="dio" class="radio-input">
             <label for="josuke">Josuke</label>
-            <input type="radio" name="radio-button" id="josuke">
+            <input type="radio" name="radio-button" id="josuke" class="radio-input">
             <label for="levi">Levi</label>
-            <input type="radio" name="radio-button" id="levi">
+            <input type="radio" name="radio-button" id="levi" class="radio-input">
         </fieldset>
         <p>Date: <label for="dateInput"></label><input type="text" id="dateInput" disabled></p>
         <p>Phone Number: <label for="phone"></label><input placeholder="xxx-xxx-xxxx" type="text" id="phone"></p>
