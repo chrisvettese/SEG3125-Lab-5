@@ -8,6 +8,7 @@ const setDateFormat = "mm/dd/yy";
 let phoneNumberState = false;
 let fullNameState = false;
 let dateState = false;
+let payState = false;
 
 function disableDates(date) {
     if (date.getDay() === 0 || date.getDay() === 6 || unavailableDays.includes(date.getDay())) {
@@ -49,6 +50,46 @@ $(document).ready(() => {
             "ui-tooltip": "highlight"
         }
     });
+    pay.on('change paste keyup', () => {
+        const payStrOriginal = pay.val();
+        let payStr = payStrOriginal.replace(/\D/g, '');
+        if (payStr + ' ' === payStrOriginal && payStr.length === 4) {
+            return;
+        }
+        let paySubStr = payStr.substring(0, 4) + ' ' + payStr.substring(4, 8) + ' ';
+        if (paySubStr === payStrOriginal) {
+            return;
+        }
+        paySubStr += payStr.substring(8, 12) + ' ';
+        if (paySubStr === payStrOriginal) {
+            return;
+        }
+        if (payStr.length > 16) {
+            payStr = payStr.substring(0, 16);
+        }
+        if (payStr.length > 4) {
+            payStr = payStr.substring(0, 4) + ' ' + payStr.substring(4);
+        }
+        if (payStr.length > 9) {
+            payStr = payStr.substring(0, 9) + ' ' + payStr.substring(9);
+        }
+        if (payStr.length > 14) {
+            payStr = payStr.substring(0, 14) + ' ' + payStr.substring(14);
+        }
+        if (payStr.length === 19) {
+            if (!payState) {
+                const payText = $('#pay-text');
+                payText.append('<img class="small-icon img-fluid" id="status-image-pay" src="images/check.png" alt="Checkmark">');
+                payState = true;
+            }
+        } else {
+            if (payState) {
+                $('#status-image-pay').remove();
+                payState = false;
+            }
+        }
+        pay.val(payStr);
+    });
 
     const dateInput = $('#date-input')
     dateInput.on('mouseenter', function () {
@@ -81,11 +122,11 @@ $(document).ready(() => {
     const phoneInput = $('#phone');
     phoneInput.on('change paste keyup', () => {
         const phoneStrOriginal = phoneInput.val();
-        let phoneStr = phoneStrOriginal.replace(/\D/g,'');
-        if (phoneStr + '-' === phoneStrOriginal) {
+        let phoneStr = phoneStrOriginal.replace(/\D/g, '');
+        if (phoneStr + '-' === phoneStrOriginal && phoneStr.length === 3) {
             return;
         }
-        if (phoneStr.substring(0, 3) + '-' + phoneStr.substring(3) + '-' === phoneStrOriginal) {
+        if (phoneStr.substring(0, 3) + '-' + phoneStr.substring(3, 6) + '-' === phoneStrOriginal && phoneStr.length === 6) {
             return;
         }
         if (phoneStr.length > 10) {
@@ -140,6 +181,10 @@ $(document).ready(() => {
             fullNameState = false;
             $('#status-image-name').remove();
         }
+    });
+
+    $('#book-button').on('click', () => {
+        alert("Request submitted! We'll call you when your appointment is scheduled.")
     })
 });
 
